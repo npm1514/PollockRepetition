@@ -1,9 +1,12 @@
 app.controller("splatCtrl", function($scope) {
 
-  var width = 200;
-  var height = 200;
+  var width = 50;
+  var height = 50;
 
-  for (var j = 0; j < 100; j++) {
+var splat = function(){
+  d3.selectAll("svg").remove();
+
+  for (var j = 0; j < 1000; j++) {
     var svg = d3.select("splat")
       .append("svg")
       .attr("width", width)
@@ -41,4 +44,9 @@ app.controller("splatCtrl", function($scope) {
         })
         .attr('fill', 'none');
   }
+}
+splat();
+setInterval(function(){
+  splat();
+},2000);
 });

@@ -2,6 +2,8 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  font-family: "Oswald";
+  text-align: center;
 }
 
 svg, .line {
@@ -13,4 +15,14 @@ splat {
   height: 100vh;
   display: inline-block;
   margin: auto;
+}
+
+.banner {
+  font-size: 350px;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin:0 auto;
+  color: rgba(211, 214, 236, 0.79);
 }
